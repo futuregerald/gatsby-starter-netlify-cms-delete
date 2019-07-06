@@ -2,3 +2,4 @@
 /blog/* https://www.netlify.com/blog/:splat 200!
 /search/* https://www.google.com/:splat 200!
 /jamstack/* https://jamstack.org/:splat 200!
+/* /about 301 Language=en
