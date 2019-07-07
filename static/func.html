@@ -43,7 +43,6 @@
                         "Content-Type": "application/json",
                         "Authorization": `Bearer ${token}`
                     },
-                    body: JSON.stringify(submissionData)
                 })
                 .then(response => {
                     if (!response.ok) {
@@ -58,6 +57,7 @@
                 });
             event.preventDefault();
         };
+
 
 
 
