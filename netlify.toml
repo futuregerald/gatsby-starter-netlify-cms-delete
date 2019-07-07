@@ -7,7 +7,7 @@
   YARN_FLAGS = "--no-ignore-optional"
 [[redirects]]
   from = "/api"
-  to = "/.netlify/functions/api"
+  to = "https://enxbp9nwdqaqb.x.pipedream.net"
   status = 200
   force = true
   signed = "JWS_KEY_NAME"
