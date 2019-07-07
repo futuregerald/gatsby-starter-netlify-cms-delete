@@ -6,8 +6,18 @@
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
 [[redirects]]
-    from = "/api"
-    to = "/.netlify/functions/api"
-    status = 200
-    force = true
-    signed = "JWS_KEY_NAME"
+  from = "/api"
+  to = "/.netlify/functions/api"
+  status = 200
+  force = true
+  signed = "JWS_KEY_NAME"
+[[redirects]]
+  from = "/*"
+  status = 200
+  conditions = {Role = ["member"]}
+  force = true
+[[redirects]]
+  from = "/*"
+  to = "/login.html
+  status = 404
+  force = true
