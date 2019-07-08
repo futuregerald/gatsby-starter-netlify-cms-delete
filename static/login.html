@@ -17,7 +17,7 @@
     <script>
         const btn = document.querySelector('button');
         btn.addEventListener('click', () => netlifyIdentity.open());
-        (async () => {
+        const refreshUser = async () => {
             if (localStorage.getItem('gotrue.user')) {
                 netlifyIdentity.gotrue.currentUser().jwt()
                     .then(jwt => console.log(tokenn))
@@ -29,7 +29,8 @@
                 netlifyIdentity.open();
             }
 
-        })()
+        }
+        setTimeout(refreshUser, 1000)
     </script>
 </body>
 
