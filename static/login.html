@@ -20,7 +20,7 @@
         const refreshUser = async () => {
             if (localStorage.getItem('gotrue.user')) {
                 netlifyIdentity.gotrue.currentUser().jwt()
-                    .then(jwt => console.log(tokenn))
+                    .then(jwt => console.log(token))
                     .catch(err => {
                         console.log(err);
                         netlifyIdentity.open();
